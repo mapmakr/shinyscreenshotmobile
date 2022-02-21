@@ -8,8 +8,14 @@ var shinyscreenshot = {
     html2canvas(
       element, {
         scale : params.scale,
-        logging : false,
-        useCORS : true
+        allowTaint: true,
+        foreignObjectRendering: true,
+        logging : true,
+        useCORS : true,
+        // height : window.outerHeight * window.innerHeight,
+        // width : window.outerWidth * window.innerWidth
+        height : document.documentElement.clientHeight
+        width : document.documentElement.clientWidth
       }
     ).then(function(canvas) {
       var img = canvas.toDataURL();
