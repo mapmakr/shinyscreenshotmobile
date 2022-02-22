@@ -9,13 +9,13 @@ getSession <- function() {
 }
 
 getDependencies <- function() {
-  shiny::addResourcePath("shinyscreenshot-assets",
-                         system.file("assets", package = "shinyscreenshot"))
+  shiny::addResourcePath("shinyscreenshotmobile-assets",
+                         system.file("assets", package = "shinyscreenshotmobile"))
 
   shiny::singleton(shiny::tags$head(
-    shiny::tags$script(src = "shinyscreenshot-assets/js/html2canvas/html2canvas.min.js"),
-    shiny::tags$script(src = "shinyscreenshot-assets/js/FileSaver/FileSaver.js"),
-    shiny::tags$script(src = "shinyscreenshot-assets/js/shinyscreenshot/shinyscreenshot.js")
+    shiny::tags$script(src = "shinyscreenshotmobile-assets/js/html2canvas/html2canvas.min.js"),
+    shiny::tags$script(src = "shinyscreenshotmobile-assets/js/FileSaver/FileSaver.js"),
+    shiny::tags$script(src = "shinyscreenshotmobile-assets/js/shinyscreenshot/shinyscreenshot.js")
   ))
 }
 
