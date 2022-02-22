@@ -14,7 +14,7 @@ var shinyscreenshot = {
         useCORS : true,
         // height : window.outerHeight * window.innerHeight,
         // width : window.outerWidth * window.innerWidth
-        height : document.documentElement.clientHeight
+        height : document.documentElement.clientHeight,
         width : document.documentElement.clientWidth
       }
     ).then(function(canvas) {
