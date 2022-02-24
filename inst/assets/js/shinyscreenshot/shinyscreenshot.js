@@ -11,9 +11,9 @@ var shinyscreenshot = {
         allowTaint: true,
         foreignObjectRendering: true,
         logging : true,
-        useCORS : true,
-        height : window.outerHeight-112,
-        width : window.outerWidth
+        useCORS : true
+        // height : window.outerHeight-112,
+        // width : window.outerWidth
         // height : document.documentElement.clientHeight-112,
         // width : document.documentElement.clientWidth
       }
