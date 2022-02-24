@@ -8,9 +8,9 @@ var shinyscreenshot = {
     html2canvas(
       element, {
         scale : params.scale,
-        allowTaint: true,
+        // allowTaint: true,
         foreignObjectRendering: true,
-        logging : true,
+        // logging : true,
         useCORS : true
         // height : window.outerHeight-112,
         // width : window.outerWidth
