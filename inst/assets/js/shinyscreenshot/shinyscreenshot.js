@@ -12,10 +12,10 @@ var shinyscreenshot = {
         foreignObjectRendering: true,
         logging : true,
         useCORS : true,
-        // height : window.outerHeight * window.innerHeight,
-        // width : window.outerWidth * window.innerWidth
-        height : document.documentElement.clientHeight-112,
-        width : document.documentElement.clientWidth
+        height : window.outerHeight-112,
+        width : window.outerWidth
+        // height : document.documentElement.clientHeight-112,
+        // width : document.documentElement.clientWidth
       }
     ).then(function(canvas) {
       var img = canvas.toDataURL();
